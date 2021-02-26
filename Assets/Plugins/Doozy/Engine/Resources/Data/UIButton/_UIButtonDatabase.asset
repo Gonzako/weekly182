@@ -17,6 +17,8 @@ MonoBehaviour:
   - Custom
   - Example
   - General
+  - MainMenuButtons
   Categories:
   - {fileID: 11400000, guid: 40f9e81ff80114a47a3721228ba749ed, type: 2}
   - {fileID: 11400000, guid: c99979fee5178b8438e119d67c7c7c02, type: 2}
+  - {fileID: 11400000, guid: 07cae224ef441234ab6ba324eaa58436, type: 2}
