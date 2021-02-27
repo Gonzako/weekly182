@@ -1,0 +1,33 @@
+{
+    "name": "PlayerInputAssets",
+    "maps": [
+        {
+            "name": "GameWorld",
+            "id": "b035b5e6-6d3f-4a9b-9165-149280a248d3",
+            "actions": [
+                {
+                    "name": "DesiredDelta",
+                    "type": "Value",
+                    "id": "25667d30-b0f3-44de-b3b2-7a07baf7c95e",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5dd9c42d-3148-4675-95f1-8a36dd40dd27",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DesiredDelta",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
