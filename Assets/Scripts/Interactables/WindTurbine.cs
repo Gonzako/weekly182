@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 
-public class WindTurbine : BaseInteractable
+public class WindTurbine : BaseInteractable<Player>
 {
     [Tooltip("Will apply this amount of force in the direction to the player")]
-    public Vector3 Force;
+    public float ForceMagnitude;
 
     private Rigidbody playerRigidBody;
 
@@ -20,6 +20,6 @@ public class WindTurbine : BaseInteractable
 
     protected override void OnPlayerTriggerStay(Player player)
     {
-        playerRigidBody.AddForce(Force, ForceMode.Force);
+        playerRigidBody.AddForce(transform.forward*ForceMagnitude, ForceMode.Force);
     }
 }

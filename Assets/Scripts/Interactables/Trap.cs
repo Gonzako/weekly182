@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Trap : BaseInteractable
+public class Trap : BaseInteractable<Player>
 {
     public bool DoesPlayerGetDamagedUponEnter = true;
 

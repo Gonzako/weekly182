@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+
 public class cameraTargetFixer : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -15,7 +16,6 @@ public class cameraTargetFixer : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         

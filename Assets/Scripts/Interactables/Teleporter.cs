@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Teleporter : BaseInteractable
+public class Teleporter : BaseInteractable<Player>
 {
     [Tooltip("The position to teleport the player to")]
     public Transform TeleportLocation;
