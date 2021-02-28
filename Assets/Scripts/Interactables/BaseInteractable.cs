@@ -2,7 +2,7 @@
 using UnityEngine.Events;
 
 [RequireComponent(typeof(Collider))]
-public abstract class BaseInteractable : MonoBehaviour
+public abstract class BaseInteractable<T> : MonoBehaviour
 {
     [Header("Interaction Events")]
     [Tooltip("These events will be triggered if the 'ShouldPlayerTrigger' returns true")]
@@ -14,49 +14,83 @@ public abstract class BaseInteractable : MonoBehaviour
     [Tooltip("These events will be triggered once the player exits the trigger zone")]
     public UnityEvent OnPlayerExit;
 
-    protected virtual bool ShouldPlayerTrigger(Player player) => true;
+    protected virtual bool ShouldPlayerTrigger(T player) => true;
 
-    protected abstract void OnPlayerTriggerEnter(Player player);
+    protected abstract void OnPlayerTriggerEnter(T player);
 
-    protected abstract void OnPlayerTriggerStay(Player player);
+    protected abstract void OnPlayerTriggerStay(T player);
 
-    protected abstract void OnPlayerTriggerExit(Player player);
+    protected abstract void OnPlayerTriggerExit(T player);
 
     private void Start()
     {
         var collider = GetComponent<Collider>();
         if (collider == null)
             Debug.LogError("There must be a collider on all interactables", this);
-        collider.isTrigger = true;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        var player = other.GetComponent<Player>();
-        if (player && ShouldPlayerTrigger(player))
+        OnEnter(other);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        OnEnter(collision.collider);
+    }
+
+    private void OnEnter(Collider other)
+    {
+        var obj = other.GetComponent<T>();
+        if (CanTrigger(obj))
         {
-            OnPlayerTriggerEnter(player);
+            OnPlayerTriggerEnter(obj);
             OnPlayerEnter?.Invoke();
         }
     }
 
     private void OnTriggerStay(Collider other)
     {
-        var player = other.GetComponent<Player>();
-        if (player && ShouldPlayerTrigger(player))
+        OnStay(other);
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        OnStay(collision.collider);
+    }
+
+    private void OnStay(Collider other)
+    {
+        var obj = other.GetComponent<T>();
+        if (CanTrigger(obj))
         {
-            OnPlayerTriggerStay(player);
+            OnPlayerTriggerStay(obj);
             OnPlayerStay?.Invoke();
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        var player = other.GetComponent<Player>();
-        if (player && ShouldPlayerTrigger(player))
+        OnExit(other);
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        OnExit(collision.collider);
+    }
+
+    private void OnExit(Collider other)
+    {
+        var obj = other.GetComponent<T>();
+        if (CanTrigger(obj))
         {
-            OnPlayerTriggerExit(player);
+            OnPlayerTriggerExit(obj);
             OnPlayerExit?.Invoke();
         }
+    }
+
+    private bool CanTrigger(T obj)
+    {
+        return obj != null && ShouldPlayerTrigger(obj);
     }
 }

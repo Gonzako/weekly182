@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class WindTurbine : BaseInteractable
+public class WindTurbine : BaseInteractable<Player>
 {
     [Tooltip("Will apply this amount of force in the direction to the player")]
     public Vector3 Force;
