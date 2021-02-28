@@ -35,6 +35,7 @@ public abstract class BaseInteractable : MonoBehaviour
         var player = other.GetComponent<Player>();
         if (player && ShouldPlayerTrigger(player))
         {
+            Debug.Log(gameObject.name + "interacted with " + other.gameObject);
             OnPlayerTriggerEnter(player);
             OnPlayerEnter?.Invoke();
         }
@@ -55,6 +56,7 @@ public abstract class BaseInteractable : MonoBehaviour
         var player = other.GetComponent<Player>();
         if (player && ShouldPlayerTrigger(player))
         {
+            Debug.Log(gameObject.name + "stopped interacting with " + other.gameObject);
             OnPlayerTriggerExit(player);
             OnPlayerExit?.Invoke();
         }
