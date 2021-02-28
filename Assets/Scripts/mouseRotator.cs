@@ -8,7 +8,7 @@ public class mouseRotator : MonoBehaviour
     PlayerInputAssets playerInputs;
 
     [SerializeField]
-    Transform playerRef;
+    public Transform playerRef;
 
     public float moveAmount = 0.2f;
     public float maxAngle = 80;
