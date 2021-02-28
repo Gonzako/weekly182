@@ -6,21 +6,21 @@ public abstract class BaseInteractable<T> : MonoBehaviour where T : MonoBehaviou
 {
     [Header("Interaction Events")]
     [Tooltip("These events will be triggered if the 'ShouldPlayerTrigger' returns true")]
-    public UnityEvent OnPlayerEnter;
+    public UnityEvent<T> OnPlayerEnter;
 
     [Tooltip("These events will be triggered while the player remains in the trigger zone")]
-    public UnityEvent OnPlayerStay;
+    public UnityEvent<T> OnPlayerStay;
 
     [Tooltip("These events will be triggered once the player exits the trigger zone")]
-    public UnityEvent OnPlayerExit;
+    public UnityEvent<T> OnPlayerExit;
 
-    protected virtual bool ShouldPlayerTrigger(T player) => true;
+    protected virtual bool ShouldPlayerTrigger(T other) => true;
 
-    protected abstract void OnPlayerTriggerEnter(T player);
+    protected abstract void OnPlayerTriggerEnter(T other);
 
-    protected abstract void OnPlayerTriggerStay(T player);
+    protected abstract void OnPlayerTriggerStay(T other);
 
-    protected abstract void OnPlayerTriggerExit(T player);
+    protected abstract void OnPlayerTriggerExit(T other);
 
     private void Start()
     {
@@ -46,7 +46,7 @@ public abstract class BaseInteractable<T> : MonoBehaviour where T : MonoBehaviou
         {
             Debug.Log($"{obj.name} has entered {gameObject.name} collider");
             OnPlayerTriggerEnter(obj);
-            OnPlayerEnter?.Invoke();
+            OnPlayerEnter?.Invoke(obj);
         }
     }
 
@@ -66,7 +66,7 @@ public abstract class BaseInteractable<T> : MonoBehaviour where T : MonoBehaviou
         if (CanTrigger(obj))
         {
             OnPlayerTriggerStay(obj);
-            OnPlayerStay?.Invoke();
+            OnPlayerStay?.Invoke(obj);
         }
     }
 
@@ -87,7 +87,7 @@ public abstract class BaseInteractable<T> : MonoBehaviour where T : MonoBehaviou
         {
             Debug.Log($"{obj.name} has exit {gameObject.name} collider");
             OnPlayerTriggerExit(obj);
-            OnPlayerExit?.Invoke();
+            OnPlayerExit?.Invoke(obj);
         }
     }
 
