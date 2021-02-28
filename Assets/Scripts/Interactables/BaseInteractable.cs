@@ -6,15 +6,15 @@ public abstract class BaseInteractable<T> : MonoBehaviour where T : MonoBehaviou
 {
     [Header("Interaction Events")]
     [Tooltip("These events will be triggered if the 'ShouldPlayerTrigger' returns true")]
-    public UnityEvent<T> OnPlayerEnter;
+    public UnityEvent OnPlayerEnter;
 
     [Tooltip("These events will be triggered while the player remains in the trigger zone")]
-    public UnityEvent<T> OnPlayerStay;
+    public UnityEvent OnPlayerStay;
 
     [Tooltip("These events will be triggered once the player exits the trigger zone")]
-    public UnityEvent<T> OnPlayerExit;
+    public UnityEvent OnPlayerExit;
 
-    protected virtual bool ShouldPlayerTrigger(T other) => true;
+    protected virtual bool ShouldTrigger(T other) => true;
 
     protected abstract void OnPlayerTriggerEnter(T other);
 
@@ -46,7 +46,7 @@ public abstract class BaseInteractable<T> : MonoBehaviour where T : MonoBehaviou
         {
             Debug.Log($"{obj.name} has entered {gameObject.name} collider");
             OnPlayerTriggerEnter(obj);
-            OnPlayerEnter?.Invoke(obj);
+            OnPlayerEnter?.Invoke();
         }
     }
 
@@ -66,7 +66,7 @@ public abstract class BaseInteractable<T> : MonoBehaviour where T : MonoBehaviou
         if (CanTrigger(obj))
         {
             OnPlayerTriggerStay(obj);
-            OnPlayerStay?.Invoke(obj);
+            OnPlayerStay?.Invoke();
         }
     }
 
@@ -87,12 +87,12 @@ public abstract class BaseInteractable<T> : MonoBehaviour where T : MonoBehaviou
         {
             Debug.Log($"{obj.name} has exit {gameObject.name} collider");
             OnPlayerTriggerExit(obj);
-            OnPlayerExit?.Invoke(obj);
+            OnPlayerExit?.Invoke();
         }
     }
 
     private bool CanTrigger(T obj)
     {
-        return obj != null && ShouldPlayerTrigger(obj);
+        return obj != null && ShouldTrigger(obj);
     }
 }
