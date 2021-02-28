@@ -2,6 +2,8 @@
 
 public class Trap : BaseInteractable
 {
+    public bool DoesPlayerGetDamagedUponEnter = true;
+
     [Tooltip("The damage the player will take")]
     public int Damage = 10;
 
@@ -14,6 +16,10 @@ public class Trap : BaseInteractable
     {
         hitTimer = 0;
         hitTimer += Time.deltaTime;
+        if (DoesPlayerGetDamagedUponEnter)
+        {
+            player.TakeDamage(Damage);
+        }
     }
 
     protected override void OnPlayerTriggerExit(Player player)
