@@ -58,4 +58,5 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
-/FMOD/Cache
+FMOD190Project
+fmod_editor.log
