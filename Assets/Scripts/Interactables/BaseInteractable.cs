@@ -2,7 +2,7 @@
 using UnityEngine.Events;
 
 [RequireComponent(typeof(Collider))]
-public abstract class BaseInteractable<T> : MonoBehaviour
+public abstract class BaseInteractable<T> : MonoBehaviour where T : MonoBehaviour
 {
     [Header("Interaction Events")]
     [Tooltip("These events will be triggered if the 'ShouldPlayerTrigger' returns true")]
@@ -44,6 +44,7 @@ public abstract class BaseInteractable<T> : MonoBehaviour
         var obj = other.GetComponent<T>();
         if (CanTrigger(obj))
         {
+            Debug.Log($"{obj.name} has entered {gameObject.name} collider");
             OnPlayerTriggerEnter(obj);
             OnPlayerEnter?.Invoke();
         }
@@ -84,6 +85,7 @@ public abstract class BaseInteractable<T> : MonoBehaviour
         var obj = other.GetComponent<T>();
         if (CanTrigger(obj))
         {
+            Debug.Log($"{obj.name} has exit {gameObject.name} collider");
             OnPlayerTriggerExit(obj);
             OnPlayerExit?.Invoke();
         }
