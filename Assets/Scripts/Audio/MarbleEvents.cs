@@ -1,10 +1,9 @@
-﻿using FMODUnity;
+﻿using FMOD.Studio;
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using FMOD;
-using FMOD.Studio;
 
 public class MarbleEvents : MonoBehaviour
 {
@@ -15,19 +14,25 @@ public class MarbleEvents : MonoBehaviour
 
     [SerializeField] private Rigidbody rb;
 
+    private float oldVelocity = 0;
+
+   
+
     private void Start()
     {
         rolling = RuntimeManager.CreateInstance(rollingEvent);
     }
     private void OnCollisionEnter(Collision collision)
     {
-        RuntimeManager.PlayOneShot(collisionEvent);
+            if ( collision.relativeVelocity.magnitude > 4)
+                RuntimeManager.PlayOneShot(collisionEvent);
     }
 
     private void Update()
     {
-        rolling.setParameterByName("velocity", rb.velocity.normalized.magnitude);
-        print(rb.velocity.normalized.magnitude);
+         Debug.Log(rb.velocity.normalized.sqrMagnitude);
+         rolling.setParameterByName("velocity", rb.velocity.normalized.sqrMagnitude);
+         print(rb.velocity.normalized.magnitude);
     }
 }
 

@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 7761136031723778577}
   - component: {fileID: 7761136031723778590}
   - component: {fileID: 7761136031723778591}
+  - component: {fileID: 978594229}
   m_Layer: 0
   m_Name: PlayerLogic
   m_TagString: Untagged
@@ -199,6 +200,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43ac7241688f5c341a9cb857fc3966c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &978594229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7761136031723778579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e51fb1100b3ed2419b08d5c34d882cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionEvent: event:/ball_collision_placeholder
+  rollingEvent: event:/ball_roll_loop
+  rb: {fileID: 7761136031723778590}
 --- !u!1 &7761136032415139500
 GameObject:
   m_ObjectHideFlags: 0

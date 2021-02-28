@@ -57,7 +57,7 @@ MonoBehaviour:
   Path: FMOD190Project/jam190/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 637501398831045454
+  lastModified: 637501435247548346
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -168,10 +168,33 @@ MonoBehaviour:
   Path: FMOD190Project/jam190/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637501398830975507
+  lastModified: 637501435247428484
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-893999552759152970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/level_completed
+  m_EditorClassIdentifier: 
+  Path: event:/level_completed
+  guid: 7596048aaa0b1e4aac136f2e8be43af9
+  Banks:
+  - {fileID: -5995949426381212571}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,12 +218,15 @@ MonoBehaviour:
   - {fileID: 4846206671828360469}
   - {fileID: -3961155151143234971}
   - {fileID: -4008397196154591956}
+  - {fileID: 2394421274661579011}
+  - {fileID: 5270383995910643726}
+  - {fileID: -893999552759152970}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1177159838186353986}
   StringsBanks:
   - {fileID: 5238430229568626002}
-  stringsBankWriteTime: 637501398830975507
+  stringsBankWriteTime: 637501435247448451
   cacheVersion: 6
 --- !u!114 &423520578673441670
 MonoBehaviour:
@@ -223,6 +249,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 742
   Exists: 1
+--- !u!114 &2394421274661579011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ball_collision_placeholder
+  m_EditorClassIdentifier: 
+  Path: event:/ball_collision_placeholder
+  guid: 39be9946625f0841a857adfc8ecc5b60
+  Banks:
+  - {fileID: -5995949426381212571}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &3399640632106486920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,12 +392,35 @@ MonoBehaviour:
   Path: FMOD190Project/jam190/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637501398830975507
+  lastModified: 637501435247448451
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1056
+    Value: 1216
   Exists: 1
+--- !u!114 &5270383995910643726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/level_failed
+  m_EditorClassIdentifier: 
+  Path: event:/level_failed
+  guid: 66ff0fba7d08064090c9baa5bb610924
+  Banks:
+  - {fileID: -5995949426381212571}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &5560744792954473436
 MonoBehaviour:
   m_ObjectHideFlags: 0
