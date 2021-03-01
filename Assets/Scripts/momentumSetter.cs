@@ -6,6 +6,9 @@ public class momentumSetter : MonoBehaviour
 {
     [SerializeField]
     Rigidbody target;
+
+    [Range(0, 10f)]
+    public float magnitude = 2;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +18,6 @@ public class momentumSetter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.localPosition = target.velocity;
+        transform.localPosition = target.velocity * magnitude;
     }
 }
