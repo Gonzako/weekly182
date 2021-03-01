@@ -77,6 +77,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_A79CDDF6: -1
     - _Alpha: 0.78
     - _AlphaClip: 0
     - _AtmosphereThickness: 1
@@ -111,14 +112,14 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _BottomColor: {r: 1, g: 0, b: 0.9349532, a: 1}
+    - _BottomColor: {r: 0, g: 1, b: 0.69148946, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _GroundColor: {r: 0.5283019, g: 0.16197936, b: 0.17589442, a: 1}
     - _SkyTint: {r: 0.94509804, g: 0.90657115, b: 0.04705882, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Tint: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
-    - _TopColor: {r: 0.45957953, g: 0.6509434, b: 0.19958165, a: 1}
+    - _TopColor: {r: 1, g: 0.24056602, b: 0.693631, a: 1}
 --- !u!114 &7709411034525008814
 MonoBehaviour:
   m_ObjectHideFlags: 11

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 813892971}
-  m_IndirectSpecularColor: {r: 0.83370614, g: 0.7022762, b: 0.38193506, a: 1}
+  m_IndirectSpecularColor: {r: 0.7516954, g: 0.035460062, b: 0.3299086, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -277,7 +277,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &659702423
 Transform:
   m_ObjectHideFlags: 0
@@ -536,6 +536,40 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -50, y: -30, z: 0}
+--- !u!1 &1484074343 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7761136031723778579, guid: ba97411478861734c9d09314a523d640,
+    type: 3}
+  m_PrefabInstance: {fileID: 1862521157}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1484074348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484074343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f08b640c30f8f3946941ade7e202cd6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnResetPlayerDueToStuck:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: c47f6f78676fff145b1c07bfe4dd1b63, type: 2}
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  currentTime: 0
+  maxTime: 4
 --- !u!1001 &1579066908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -622,15 +656,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7761136031723778590, guid: ba97411478861734c9d09314a523d640,
-        type: 3}
-      propertyPath: m_Drag
-      value: 0.06
+    - target: {fileID: 978594229, guid: ba97411478861734c9d09314a523d640, type: 3}
+      propertyPath: OnAnyCollision.m_PersistentCalls.m_Calls.Array.size
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7761136031723778590, guid: ba97411478861734c9d09314a523d640,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 112
+    - target: {fileID: 978594229, guid: ba97411478861734c9d09314a523d640, type: 3}
+      propertyPath: OnAnyCollision.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 978594229, guid: ba97411478861734c9d09314a523d640, type: 3}
+      propertyPath: OnAnyCollision.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: 283c810d24e8e5c4a87ea3e4843daf4e,
+        type: 2}
+    - target: {fileID: 978594229, guid: ba97411478861734c9d09314a523d640, type: 3}
+      propertyPath: OnAnyCollision.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 978594229, guid: ba97411478861734c9d09314a523d640, type: 3}
+      propertyPath: OnAnyCollision.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Raise
+      objectReference: {fileID: 0}
+    - target: {fileID: 978594229, guid: ba97411478861734c9d09314a523d640, type: 3}
+      propertyPath: OnAnyCollision.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7761136032512039302, guid: ba97411478861734c9d09314a523d640,
         type: 3}
@@ -718,6 +767,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab7a622b0ce5f994594620d428d73f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2074541525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074541523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5758ca93461aeeb4589456a052b07d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _showDebugFields: 0
+  _enableGizmoDebugging: 1
+  _debugColor: {r: 0, g: 1, b: 1, a: 1}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: c47f6f78676fff145b1c07bfe4dd1b63,
+    type: 2}
+  _event: {fileID: 11400000, guid: c47f6f78676fff145b1c07bfe4dd1b63, type: 2}
+  _response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2074541527}
+        m_MethodName: resetPosition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2074541527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074541523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58e742c6e5c922541bf05af1ea4b5dfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2128122065056545154
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -728,62 +821,62 @@ PrefabInstance:
     - target: {fileID: 2128122064464962511, guid: c4ec5c7608e6fff478e7f25ab2d34ad0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.89
+      value: -3.790001
       objectReference: {fileID: 0}
     - target: {fileID: 2128122064464962511, guid: c4ec5c7608e6fff478e7f25ab2d34ad0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.16
+      value: 10.780001
       objectReference: {fileID: 0}
     - target: {fileID: 2128122064464962511, guid: c4ec5c7608e6fff478e7f25ab2d34ad0,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99141437
+      value: 0.9120585
       objectReference: {fileID: 0}
     - target: {fileID: 2128122064464962511, guid: c4ec5c7608e6fff478e7f25ab2d34ad0,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.13075788
+      value: 0.41006017
       objectReference: {fileID: 0}
     - target: {fileID: 2128122064464962511, guid: c4ec5c7608e6fff478e7f25ab2d34ad0,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000018684181
+      value: 0.000000022193571
       objectReference: {fileID: 0}
     - target: {fileID: 2128122064464962511, guid: c4ec5c7608e6fff478e7f25ab2d34ad0,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000024642612
+      value: -0.000000009978198
       objectReference: {fileID: 0}
     - target: {fileID: 2128122065026540498, guid: c4ec5c7608e6fff478e7f25ab2d34ad0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.89
+      value: -3.790001
       objectReference: {fileID: 0}
     - target: {fileID: 2128122065026540498, guid: c4ec5c7608e6fff478e7f25ab2d34ad0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.16
+      value: 10.780001
       objectReference: {fileID: 0}
     - target: {fileID: 2128122065026540498, guid: c4ec5c7608e6fff478e7f25ab2d34ad0,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99141437
+      value: 0.9120585
       objectReference: {fileID: 0}
     - target: {fileID: 2128122065026540498, guid: c4ec5c7608e6fff478e7f25ab2d34ad0,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.13075788
+      value: 0.41006017
       objectReference: {fileID: 0}
     - target: {fileID: 2128122065026540498, guid: c4ec5c7608e6fff478e7f25ab2d34ad0,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000018684181
+      value: 0.000000022193571
       objectReference: {fileID: 0}
     - target: {fileID: 2128122065026540498, guid: c4ec5c7608e6fff478e7f25ab2d34ad0,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000024642612
+      value: -0.000000009978198
       objectReference: {fileID: 0}
     - target: {fileID: 2128122065951988768, guid: c4ec5c7608e6fff478e7f25ab2d34ad0,
         type: 3}
