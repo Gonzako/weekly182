@@ -168,7 +168,7 @@ MonoBehaviour:
   Path: FMOD190Project/jam190/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637501435247428484
+  lastModified: 637499614145582748
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -210,23 +210,14 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: 5238430229568626002}
   - {fileID: -1177159838186353986}
-  - {fileID: 5968674394472921156}
-  - {fileID: -5995949426381212571}
   EditorEvents:
   - {fileID: 4439988006378555882}
-  - {fileID: 5560744792954473436}
-  - {fileID: 4846206671828360469}
-  - {fileID: -3961155151143234971}
-  - {fileID: -4008397196154591956}
-  - {fileID: 2394421274661579011}
-  - {fileID: 5270383995910643726}
-  - {fileID: -893999552759152970}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1177159838186353986}
   StringsBanks:
   - {fileID: 5238430229568626002}
-  stringsBankWriteTime: 637501435247448451
+  stringsBankWriteTime: 637499614145592738
   cacheVersion: 6
 --- !u!114 &423520578673441670
 MonoBehaviour:
@@ -392,11 +383,11 @@ MonoBehaviour:
   Path: FMOD190Project/jam190/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637501435247448451
+  lastModified: 637499614145592738
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1216
+    Value: 742
   Exists: 1
 --- !u!114 &5270383995910643726
 MonoBehaviour:
