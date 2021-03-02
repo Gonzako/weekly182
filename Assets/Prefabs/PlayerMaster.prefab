@@ -5164,7 +5164,8 @@ MonoBehaviour:
   _showDebugFields: 0
   _enableGizmoDebugging: 1
   _debugColor: {r: 0, g: 1, b: 1, a: 1}
-  _previouslyRegisteredEvent: {fileID: 0}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: b2f58ca4e5e265f409ef3471f077bd91,
+    type: 2}
   _event: {fileID: 11400000, guid: b2f58ca4e5e265f409ef3471f077bd91, type: 2}
   _response:
     m_PersistentCalls:
@@ -5187,7 +5188,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 5
+          m_FloatArgument: 3
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -5199,6 +5200,17 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 7761136031723778590}
+        m_MethodName: set_drag
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 1.5
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
