@@ -70,6 +70,7 @@ namespace SOInventory
                 go.transform.SetParent(transform);
                 StatusElement el = go.GetComponent<StatusElement>();
                 _usableElements.Add(el);
+                go.SetActive(false);
             }
         }
 

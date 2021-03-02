@@ -7,7 +7,7 @@ namespace SOInventory {
     {
         [SerializeField] private StatusType type;
 
-        private void OnTriggerEnter2D(Collider2D collision)
+        private void OnTriggerEnter(Collider collision)
         {
             Status status;
             if(collision.transform.TryGetComponent(out status))
