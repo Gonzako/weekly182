@@ -10,4 +10,4 @@ public class Surface : MonoBehaviour
 }
 
 
-public enum SurfaceTypes {Wood, Metal}
+public enum SurfaceTypes {Wood=0, Metal=1}

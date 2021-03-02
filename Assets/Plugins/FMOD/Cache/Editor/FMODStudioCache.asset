@@ -69,7 +69,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -265515363657044885}
+  - {fileID: -5805787576119669402}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -225,6 +225,26 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-5805787576119669402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ball_Roll_placeholder/velocity
+  m_EditorClassIdentifier: 
+  Name: velocity
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-5350614265270437244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,6 +268,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 500
+--- !u!114 &-4390467674280585659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ball_Roll_placeholder/velocity
+  m_EditorClassIdentifier: 
+  Name: velocity
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &-4384895038358781195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,7 +327,7 @@ MonoBehaviour:
   Path: FMOD190Project/jam190/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637503074440101450
+  lastModified: 637503154553921490
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -380,7 +420,8 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 2694568646153594045}
+  - {fileID: 5824447764458867010}
+  - {fileID: 2954027705799697216}
   MinDistance: 0
   MaxDistance: 0
   Length: 2357
@@ -399,11 +440,11 @@ MonoBehaviour:
   Path: FMOD190Project/jam190/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637503074440111444
+  lastModified: 637503154553941479
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1796
+    Value: 1892
   Exists: 1
 --- !u!114 &-1905073310331943597
 MonoBehaviour:
@@ -427,6 +468,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-1833981478201798840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ball_Roll_Speed_Parameter/Rolling Speed
+  m_EditorClassIdentifier: 
+  Name: Rolling Speed
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &-1629022014898507321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,6 +554,26 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-1070085082040285634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/collision_event/Surface
+  m_EditorClassIdentifier: 
+  Name: Surface
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-893999552759152970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -551,7 +632,7 @@ MonoBehaviour:
   Path: FMOD190Project/jam190/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 637503074440371177
+  lastModified: 637503154554251152
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -574,7 +655,27 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
+--- !u!114 &-98941313336244054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ball_Roll_Speed_Parameter/Surface
+  m_EditorClassIdentifier: 
+  Name: Surface
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -600,22 +701,23 @@ MonoBehaviour:
   - {fileID: 5222913534301645558}
   - {fileID: -7836409099048909389}
   - {fileID: -2392673313918790357}
-  - {fileID: 3549745676676108916}
   - {fileID: 6006032887396581972}
   - {fileID: 679867043428166980}
   - {fileID: -8741171120099904401}
-  - {fileID: 6857897242925906488}
   - {fileID: -8631559212213620974}
   - {fileID: 865326228394177007}
   - {fileID: 4335456493709281474}
   - {fileID: -4384895038358781195}
+  - {fileID: 1456610055371226702}
+  - {fileID: 4182387380861641139}
+  - {fileID: 8567614972951308467}
   EditorParameters:
   - {fileID: -460283946473697121}
   MasterBanks:
   - {fileID: -4120146115206503090}
   StringsBanks:
   - {fileID: -1973331206315503294}
-  stringsBankWriteTime: 637503074440111444
+  stringsBankWriteTime: 637503154553941479
   cacheVersion: 6
 --- !u!114 &423520578673441670
 MonoBehaviour:
@@ -686,6 +788,30 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &1456610055371226702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/clicks&clacks_wood
+  m_EditorClassIdentifier: 
+  Path: event:/clicks&clacks_wood
+  guid: 1695f0528d9c08419daaa60e35db5b67
+  Banks:
+  - {fileID: -4120146115206503090}
+  - {fileID: -388408425051209410}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &2394421274661579011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -728,7 +854,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &2787511306605156847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -744,9 +870,29 @@ MonoBehaviour:
   Path: FMOD190Project/jam190/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 637503074440341205
+  lastModified: 637503154554161249
   LoadResult: 0
   FileSizes: []
+  Exists: 1
+--- !u!114 &2954027705799697216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ball_Roll_Speed_Parameter/Surface
+  m_EditorClassIdentifier: 
+  Name: Surface
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
   Exists: 1
 --- !u!114 &3399640632106486920
 MonoBehaviour:
@@ -781,6 +927,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Clicks&clacks_wood
   guid: 1695f0528d9c08419daaa60e35db5b67
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &4182387380861641139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/clicks&clacks_metal
+  m_EditorClassIdentifier: 
+  Path: event:/clicks&clacks_metal
+  guid: 40b5dcf991a2af4d9e4822f0219eb223
   Banks:
   - {fileID: -4120146115206503090}
   - {fileID: -388408425051209410}
@@ -1033,6 +1201,26 @@ MonoBehaviour:
   - Name: Desktop
     Value: 738
   Exists: 1
+--- !u!114 &5824447764458867010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ball_Roll_Speed_Parameter/Rolling Speed
+  m_EditorClassIdentifier: 
+  Name: Rolling Speed
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &5968674394472921156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1090,13 +1278,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Clicks&clacks_metal
   guid: 40b5dcf991a2af4d9e4822f0219eb223
-  Banks:
-  - {fileID: -4120146115206503090}
-  - {fileID: -388408425051209410}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
+  Length: 0
+--- !u!114 &8567614972951308467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/collision_event
+  m_EditorClassIdentifier: 
+  Path: event:/collision_event
+  guid: 14621ebc4e26b943948c928941384625
+  Banks:
+  - {fileID: -388408425051209410}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -1070085082040285634}
+  MinDistance: 1
+  MaxDistance: 20
   Length: 0
