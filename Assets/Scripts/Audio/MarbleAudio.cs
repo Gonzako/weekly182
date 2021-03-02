@@ -11,6 +11,7 @@ public class MarbleAudio : MonoBehaviour
 
     public float speed;
     private EventInstance rolling;
+    private EventInstance collision;
 
     [SerializeField] private Rigidbody rb;
 
@@ -25,11 +26,12 @@ public class MarbleAudio : MonoBehaviour
     private void Start()
     {
         rolling = RuntimeManager.CreateInstance(rollingEvent);
+        collision = RuntimeManager.CreateInstance(collisionEvent);
         rolling.start();
     }
 
-    public void PlayCollisionEvent()
+    public void PlayCollisionEvent(SurfaceTypes surface)
     {
-        RuntimeManager.PlayOneShot(collisionEvent);
+        collision.setParameterByName("Surface", surface);
     }
 }
