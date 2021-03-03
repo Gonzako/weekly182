@@ -221,7 +221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelNames:
   - MainMenu
-  - CoolGameplay
+  - Get To The Goal
   - LameGameplay
 --- !u!1 &502379418
 GameObject:
