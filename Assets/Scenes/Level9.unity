@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -205,7 +205,7 @@ PrefabInstance:
     - target: {fileID: 714500611831808098, guid: 44116fbe971c1d348a2e7faff6ab308a,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 714500611831808100, guid: 44116fbe971c1d348a2e7faff6ab308a,
         type: 3}
@@ -756,6 +756,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1484074348, guid: ba97411478861734c9d09314a523d640, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7560313691236682298, guid: ba97411478861734c9d09314a523d640,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -954,16 +958,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: -3.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1157202524599174613, guid: 4fb157f6554010b429ad5fdb2a257f65,
-        type: 3}
-      propertyPath: _response.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1157202524599174613, guid: 4fb157f6554010b429ad5fdb2a257f65,
-        type: 3}
-      propertyPath: _response.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_FloatArgument
-      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 1387499428078165291, guid: 4fb157f6554010b429ad5fdb2a257f65,
         type: 3}
