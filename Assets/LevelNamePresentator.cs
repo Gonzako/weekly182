@@ -21,7 +21,7 @@ public class LevelNamePresentator : MonoBehaviour
 
     #region PrivateFields
     [SerializeField]
-    List<string> levelNames;
+    ScriptableObjectArchitecture.StringCollection levelNames;
     #endregion
 
     #region UnityCallBacks

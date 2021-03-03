@@ -4881,7 +4881,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  ForceMagnitude: 5
+  ForceMagnitude: 10
 --- !u!65 &6955109538641566010
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5007,6 +5007,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: -2859109400176981367, guid: a8899b54bef656846828cfda630fe000,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0e56f86a25e880d449bd1e618d0432ae, type: 2}
+    - target: {fileID: -2859109400176981367, guid: a8899b54bef656846828cfda630fe000,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: bc72fb82dc948954e90cac89ccbefd2a, type: 2}
+    - target: {fileID: -2859109400176981367, guid: a8899b54bef656846828cfda630fe000,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: b29e589b095b2024abb342eb8d4d18b3, type: 2}
     - target: {fileID: -1447435667451037312, guid: a8899b54bef656846828cfda630fe000,
         type: 3}
       propertyPath: m_LocalRotation.w

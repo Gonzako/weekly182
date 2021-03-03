@@ -9,11 +9,38 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: dd4b51c1eb983a340aaa7bae3465acd7
   - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: fdf498b8bb062094e9b694557c26dd71
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: e06ae7c8fd5dced4b88f9379d7e3d1f7
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: 59adfe4df1c27224ca859cc1165b7bda
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: 900598f840e9e8c41ba4fb08024d8ace
+  - enabled: 0
     path: Assets/Scenes/Gameplay.unity
     guid: 033655f42553cc2499b3a482c7cdecd0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/fmod_setup.unity
     guid: 94aa3f94b288f914ba7159ce844a84b8
+  - enabled: 1
+    path: Assets/Scenes/Level5.unity
+    guid: 47db09d9f31b04a47810211930f39b0e
+  - enabled: 1
+    path: Assets/Scenes/Level4-2(6).unity
+    guid: eb6213cb3acb45343b1a5d2d285ae514
+  - enabled: 1
+    path: Assets/Scenes/Level7.unity
+    guid: d273a3e3f6d769144bc02036a0db5c75
+  - enabled: 1
+    path: Assets/Scenes/Level8.unity
+    guid: c0c0001210854e34f9ab41bb17aeed7d
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: 883c4817bbea12f4285f51db4e14b892
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 34f3800c4ea0b91448bdcfe1dae6cc4d,
       type: 2}

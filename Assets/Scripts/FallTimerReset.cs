@@ -33,6 +33,7 @@ public class FallTimerReset : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        OnResetPlayerDueToStuck.AddListener(resetPlayerPos);
     }
 
     void FixedUpdate()
@@ -41,11 +42,15 @@ public class FallTimerReset : MonoBehaviour
         currentTime += Time.fixedDeltaTime;
         if(currentTime > maxTime)
         {
-            transform.localPosition = Vector3.zero;
-            rb.velocity = Vector3.zero;
-            currentTime = 0;
             OnResetPlayerDueToStuck.Invoke();
         }
+    }
+
+    public void resetPlayerPos()
+    {
+        transform.localPosition = Vector3.zero;
+        rb.velocity = Vector3.zero;
+        currentTime = 0;
     }
 
     void OnEnable()
