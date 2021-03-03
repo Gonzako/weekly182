@@ -706,6 +706,10 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1273044604, guid: ba97411478861734c9d09314a523d640, type: 3}
+      propertyPath: volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1273044604, guid: ba97411478861734c9d09314a523d640, type: 3}
       propertyPath: collisionEvent
       value: event:/collision_event
       objectReference: {fileID: 0}
@@ -835,6 +839,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1726840361579979624, guid: 4fb157f6554010b429ad5fdb2a257f65,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 5245901126862255946, guid: 4fb157f6554010b429ad5fdb2a257f65,
         type: 3}
