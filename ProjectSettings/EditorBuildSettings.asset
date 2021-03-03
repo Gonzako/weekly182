@@ -27,6 +27,15 @@ EditorBuildSettings:
     path: Assets/Scenes/fmod_setup.unity
     guid: 94aa3f94b288f914ba7159ce844a84b8
   - enabled: 1
+    path: Assets/Scenes/Level5.unity
+    guid: 47db09d9f31b04a47810211930f39b0e
+  - enabled: 1
+    path: Assets/Scenes/Level4-2(6).unity
+    guid: eb6213cb3acb45343b1a5d2d285ae514
+  - enabled: 1
+    path: Assets/Scenes/Level7.unity
+    guid: d273a3e3f6d769144bc02036a0db5c75
+  - enabled: 1
     path: Assets/Scenes/WinScreen.unity
     guid: 883c4817bbea12f4285f51db4e14b892
   m_configObjects:

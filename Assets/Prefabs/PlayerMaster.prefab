@@ -284,6 +284,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1484074348}
+        m_MethodName: resetPlayerPos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &807415579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5164,7 +5175,8 @@ MonoBehaviour:
   _showDebugFields: 0
   _enableGizmoDebugging: 1
   _debugColor: {r: 0, g: 1, b: 1, a: 1}
-  _previouslyRegisteredEvent: {fileID: 0}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: d353425fe68c9424d8454751742072db,
+    type: 2}
   _event: {fileID: 11400000, guid: d353425fe68c9424d8454751742072db, type: 2}
   _response:
     m_PersistentCalls:
@@ -5409,7 +5421,8 @@ MonoBehaviour:
   _showDebugFields: 0
   _enableGizmoDebugging: 1
   _debugColor: {r: 0, g: 1, b: 1, a: 1}
-  _previouslyRegisteredEvent: {fileID: 0}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: f03f4a0a68e3c7b4bb7d38dbce51e0d1,
+    type: 2}
   _event: {fileID: 11400000, guid: f03f4a0a68e3c7b4bb7d38dbce51e0d1, type: 2}
   _response:
     m_PersistentCalls:
@@ -5440,7 +5453,8 @@ MonoBehaviour:
   _showDebugFields: 0
   _enableGizmoDebugging: 1
   _debugColor: {r: 0, g: 1, b: 1, a: 1}
-  _previouslyRegisteredEvent: {fileID: 0}
+  _previouslyRegisteredEvent: {fileID: 11400000, guid: 849010c29230be64c986e5a76b0edfb1,
+    type: 2}
   _event: {fileID: 11400000, guid: 849010c29230be64c986e5a76b0edfb1, type: 2}
   _response:
     m_PersistentCalls:
