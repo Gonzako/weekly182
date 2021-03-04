@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -16605,7 +16605,18 @@ MonoBehaviour:
         CustomSortingLayer: Default
       Event:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 1926899235}
+            m_MethodName: lockMouse
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       GameEvents: []
       SoundData:
         SoundSource: 0
@@ -18364,6 +18375,7 @@ GameObject:
   - component: {fileID: 1845793015}
   - component: {fileID: 1845793014}
   - component: {fileID: 1845793013}
+  - component: {fileID: 1845793017}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -18465,6 +18477,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845793011}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1845793017
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845793011}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1849987338
 GameObject:
   m_ObjectHideFlags: 0
@@ -19309,6 +19337,7 @@ GameObject:
   - component: {fileID: 1926899234}
   - component: {fileID: 1926899233}
   - component: {fileID: 1926899232}
+  - component: {fileID: 1926899235}
   m_Layer: 0
   m_Name: MasterCanvas
   m_TagString: Untagged
@@ -19475,6 +19504,19 @@ MonoBehaviour:
   Image: {fileID: 1926899232}
   OverrideAlpha: 0
   Alpha: 0
+--- !u!114 &1926899235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1926899226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c25293cc84ed6e049932f313534cd487, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lockOnClick: 0
 --- !u!1 &2000430316
 GameObject:
   m_ObjectHideFlags: 0
